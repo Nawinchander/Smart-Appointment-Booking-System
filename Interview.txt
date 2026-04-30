@@ -1,0 +1,82 @@
+System Design Concepts Used
+1. Layered Architecture
+
+Separated:
+
+controller
+service
+repository
+
+Interview answer:
+
+“I separated request handling, business logic, and data access into layers for maintainability.”
+
+2. Event-Driven Architecture
+
+Booking emits:
+
+eventBus.emit("APPOINTMENT_BOOKED", appointment);
+
+Listener handles notification.
+
+
+Interview answer:
+
+“I used event-driven architecture to decouple booking logic from notification logic.”
+
+3. Caching
+
+Available slots are cached:
+
+cache.get("slots")
+
+Interview answer:
+
+“I cached frequently accessed appointment slots to improve response time.”
+
+
+
+
+Interview Q&A
+Q1: Why use event-driven here?
+
+Answer:
+
+“Booking an appointment and sending a notification are separate concerns, so event-driven architecture keeps them loosely coupled.”
+
+Q2: Why cache slots?
+
+Answer:
+
+“Slots are read frequently but updated less often, so caching reduces repeated reads.”
+
+Q3: How can this scale?
+
+Answer:
+
+“The notification listener can later be moved to RabbitMQ and cache can be moved to Redis.”
+
+Why This Project Is Good
+
+Because it's:
+
+Simple
+Real-world
+Unique
+Demonstrates architecture
+
+Most candidates show CRUD apps.
+
+This shows:
+
+async design
+caching
+layered architecture
+
+That stands out.
+
+GitHub Resume Description
+
+“A Smart Appointment Booking backend using Node.js demonstrating layered architecture, event-driven notifications, and slot caching for scalable backend design.”
+
+This sounds much stronger than “simple CRUD appointment app”.

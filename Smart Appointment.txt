@@ -52,3 +52,25 @@ Event emitted: APPOINTMENT_BOOKED
 
 
 
+appointment-system/
+│── src/
+│   │── controllers/
+│   │   └── appointmentController.js
+│   │
+│   │── services/
+│   │   ├── appointmentService.js
+│   │   └── eventBus.js
+│   │
+│   │── listeners/
+│   │   └── notificationListener.js
+│   │
+│   │── repositories/
+│   │   └── appointmentRepository.js
+│   │
+│   │── cache/
+│   │   └── slotCache.js
+│   │
+│   │── app.js
+│
+│── package.json
+
