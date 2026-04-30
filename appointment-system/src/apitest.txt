@@ -1,0 +1,23 @@
+GET /slots
+
+Response: JSON
+
+["10:00 AM", "11:00 AM", "12:00 PM"]
+
+
+Book Appointment: BASH
+
+POST /appointments
+
+
+Body
+{
+  "name": "John",
+  "slot": "11:00 AM"
+}
+
+Console:
+
+Notification sent to John
+
+
